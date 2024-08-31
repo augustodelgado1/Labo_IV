@@ -1,0 +1,23 @@
+
+
+
+<input placeholder="Ingrese una Edad" [(ngModel)]="edadUno" />
+<p></p>
+<input placeholder="Ingrese otra Edad" [(ngModel)]="edadDos" />
+<br>
+<br>
+<label for="suma">Suma:</label>
+<br>
+<input id="suma" [value]="suma" readonly />
+<br>
+<br>
+<label for="promedio">Promedio:</label>
+<br>
+<input id="promedio" [value]="promedio" readonly />
+
+<p></p>
+<button type="button" (click)="Calcular()" >Calcular</button>
+<p></p>
+<button type="reset" (click)="LimpiarTextBox()">Limpiar Datos</button>
+
+<p>{{ mensaje }}</p>
